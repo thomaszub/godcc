@@ -1,7 +1,9 @@
 package godcc
 
+import "time"
+
 type Date interface {
 	Year() int
-	Month() int
+	Month() time.Month
 	Day() int
 }
