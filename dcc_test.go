@@ -27,7 +27,7 @@ func TestDayCountFractions(t *testing.T) {
 			to:   date(2018, 3, 31),
 			dcExps: []DcExp{
 				{
-					dcc: D30360{},
+					dcc: D30360BB{},
 					exp: 0,
 				},
 			},
@@ -37,7 +37,7 @@ func TestDayCountFractions(t *testing.T) {
 			to:   date(2018, 7, 31),
 			dcExps: []DcExp{
 				{
-					dcc: D30360{},
+					dcc: D30360BB{},
 					exp: 0.25,
 				},
 			},
@@ -47,7 +47,7 @@ func TestDayCountFractions(t *testing.T) {
 			to:   date(2018, 9, 30),
 			dcExps: []DcExp{
 				{
-					dcc: D30360{},
+					dcc: D30360BB{},
 					exp: 0.5,
 				},
 			},
@@ -57,7 +57,7 @@ func TestDayCountFractions(t *testing.T) {
 			to:   date(2019, 3, 31),
 			dcExps: []DcExp{
 				{
-					dcc: D30360{},
+					dcc: D30360BB{},
 					exp: 1.0,
 				},
 			},
