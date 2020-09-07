@@ -14,3 +14,11 @@ func (_ D30360BB) Frac(from, to Date) float64 {
 	}
 	return base30360(from.Year(), to.Year(), int(from.Month()), int(to.Month()), d1, d2)
 }
+
+type D30E360 struct{}
+
+func (_ D30E360) Frac(from, to Date) float64 {
+	d1 := min(from.Day(), 30)
+	d2 := min(to.Day(), 30)
+	return base30360(from.Year(), to.Year(), int(from.Month()), int(to.Month()), d1, d2)
+}

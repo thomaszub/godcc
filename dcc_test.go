@@ -30,6 +30,10 @@ func TestDayCountFractions(t *testing.T) {
 					dcc: D30360BB{},
 					exp: 0,
 				},
+				{
+					dcc: D30E360{},
+					exp: 0,
+				},
 			},
 		},
 		{
@@ -38,6 +42,10 @@ func TestDayCountFractions(t *testing.T) {
 			dcExps: []DcExp{
 				{
 					dcc: D30360BB{},
+					exp: 0.25,
+				},
+				{
+					dcc: D30E360{},
 					exp: 0.25,
 				},
 			},
@@ -50,6 +58,10 @@ func TestDayCountFractions(t *testing.T) {
 					dcc: D30360BB{},
 					exp: 0.5,
 				},
+				{
+					dcc: D30E360{},
+					exp: 0.5,
+				},
 			},
 		},
 		{
@@ -58,6 +70,10 @@ func TestDayCountFractions(t *testing.T) {
 			dcExps: []DcExp{
 				{
 					dcc: D30360BB{},
+					exp: 1.0,
+				},
+				{
+					dcc: D30E360{},
 					exp: 1.0,
 				},
 			},
